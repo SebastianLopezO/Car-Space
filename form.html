@@ -41,7 +41,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark <nav class=" navbar navbar-expand-sm navbar-dark"
             style="background-color: #000000;">
             <div class="container-fluid">
-                <a class="navbar-brand" >
+                <a class="navbar-brand">
                     <img src="Images/Car'Space_Fix.png" alt="Logo" width="100" height="100"
                         class="d-inline-block align-items-center">
                     Car'Space
@@ -192,9 +192,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-5">
+                            <div class="col-md-4">
                                 <label for="country" class="form-label">Pais</label>
-                                <select class="form-select" id="pais" required>
+                                <select title="pais" class="form-select" id="pais" required>
                                     <option value="">Escoja...</option>
                                     <option>Colombia</option>
                                 </select>
@@ -203,14 +203,27 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <label for="state" class="form-label">Departamentos</label>
-                                <select class="form-select" id="state" required>
+                                <select title="departamento" class="form-select" id="state" required>
                                     <option value="">Escoja...</option>
                                     <option>Antioquia</option>
                                     <option>Bogota</option>
                                     <option>Cartagena</option>
                                     <option>Cali</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor escoja departamento.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="state" class="form-label">Sede</label>
+                                <select title="sede" class="form-select" id="state" required>
+                                    <option value="">Escoja...</option>
+                                    <option>Medellin</option>
+                                    <option>Apartado</option>
+                                    <option>Rionegro</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Por favor escoja departamento.
@@ -281,7 +294,7 @@
 
                             <button class="w-100 btn btn-primary btn-lg" type="submit">Continue para terminar su
                                 pago</button>
-                                <button class="w-100 btn btn-primary btn-lg " type="reset">Limpiar Campos</button>
+                            <button class="w-100 btn btn-primary btn-lg " type="reset">Limpiar Campos</button>
                     </form>
                 </div>
             </div>
@@ -291,51 +304,61 @@
 
     <footer class="py-5 pb-2 bg-black text-light  ">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-6 col-md-2 mb-3">  <center>
-              <h5>Nuestra web</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="beneficios.html" class="nav-link p-0 text-muted">Beneficios</a></li>
-                <li class="nav-item mb-2 "><a href="suscripciones.html" class="nav-link p-0 text-muted">Suscripciones</a>
-                </li>
-                <li class="nav-item mb-2"><a href="caracteristicas.html" class="nav-link p-0 text-muted">Caracteristicas</a>
-                </li>
-                <li class="nav-item mb-2"><a href="form.html" class="nav-link p-0 text-muted">Inscripción</a>
-                </li>
-                <li class="nav-item mb-2"><a href="team.html" class="nav-link p-0 text-muted">Nuestro equipo</a>
-                </li>
-              </ul>
-            </div>
-    
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                <h5>Recibe noticias</h5>
-                <p>Noticias sobre nuestro servicio y sus actualizaciones</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Correo eléctronico</label>
-                  <input id="newsletter1" type="email" class="form-control" placeholder="Direccion de Correo" required>
-                  <input type="submit" class="btn btn-primary" value="Enviar">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <center>
+                        <h5>Nuestra web</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="beneficios.html"
+                                    class="nav-link p-0 text-muted">Beneficios</a></li>
+                            <li class="nav-item mb-2 "><a href="suscripciones.html"
+                                    class="nav-link p-0 text-muted">Suscripciones</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="caracteristicas.html"
+                                    class="nav-link p-0 text-muted">Caracteristicas</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="form.html"
+                                    class="nav-link p-0 text-muted">Inscripción</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="team.html" class="nav-link p-0 text-muted">Nuestro
+                                    equipo</a>
+                            </li>
+                        </ul>
                 </div>
-              </form>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Recibe noticias</h5>
+                        <p>Noticias sobre nuestro servicio y sus actualizaciones</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Correo eléctronico</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Direccion de Correo"
+                                required>
+                            <input type="submit" class="btn btn-primary" value="Enviar">
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
-    
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-4 border-top">
-            <p>&copy; 2022 Car'Space. Derechos reservados</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-light" href="#"><svg class="bi" style="fill:#ffffff" width="24" height="24">
-                    <use xlink:href="#twitter" />
-                  </svg></a></li>
-              <li class="ms-3"><a class="link-light" href="#"><svg class="bi" style="fill:#ffffff" width="24" height="24">
-                    <use xlink:href="#instagram" />
-                  </svg></a></li>
-              <li class="ms-3"><a class="link-light" href="#"><svg class="bi" style="fill:#ffffff" width="24" height="24">
-                    <use xlink:href="#facebook" />
-                  </svg></a></li>
-            </ul>
-          </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-4 border-top">
+                <p>&copy; 2022 Car'Space. Derechos reservados</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-light" href="#"><svg class="bi" style="fill:#ffffff" width="24"
+                                height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-light" href="#"><svg class="bi" style="fill:#ffffff" width="24"
+                                height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-light" href="#"><svg class="bi" style="fill:#ffffff" width="24"
+                                height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                </ul>
+            </div>
         </div>
-      </footer>
+    </footer>
 
     <script src="main.js"></script>
 
